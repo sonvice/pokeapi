@@ -1,0 +1,113 @@
+body{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,152,104,1) 100%);
+}
+h1{
+    color: white;
+}
+#list{
+    display: grid;
+    grid-auto-rows: 140px;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(140px,1fr));
+    font-family: sans-serif;
+    color: white;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#list ul{
+
+
+}
+#list li{
+    position: relative;
+    display: flex;
+    background: radial-gradient(circle, rgba(237,237,237,1) 0%, rgba(69,152,104,1) 100%);
+    padding: 0;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+#list .name{
+    position: absolute;
+    top: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    text-transform: capitalize;
+}
+
+#list .experiencia{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: brown;
+}
+#list .exp{
+    width: 0%;
+    background: linear-gradient(orange,red );
+    height: 6px;
+    display: block;
+}
+
+#list span{
+    position: absolute;
+    bottom: 4px;
+    font-size: 12px;
+}
+
+#list img{
+    display: block;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    bottom: 7px;
+    transition: .3s all;
+}
+#list img:hover{
+    transform: scale(1.2);
+}
+
+#list .numero{
+    margin-right: auto;
+    font-size: 0.75rem;
+}
+
+.cabecera{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+.btn{
+    padding: .5rem 1rem;
+    border: 0;
+    font-size: 1.2rem;
+    color: white;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    outline: none;
+    transition: .3s all;
+}
+
+#btn-mostrar{
+    background: rgb(6, 204, 138);
+}
+#btn-mostrar:hover{
+    background: rgb(3, 156, 105);
+    color: white;
+}
+#btn-ocultar{
+    background: orange;
+} 
+#btn-ocultar:hover{
+    background: rgb(233, 151, 0);
+    color: white;
+}
